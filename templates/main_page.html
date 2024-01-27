@@ -1,0 +1,21 @@
+{% import "macros.html" as macros %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Піцерія "Смак Італії"</title>
+        <link rel="stylesheet" href="/static/css/first_theme.css">
+    </head>
+    <body>
+        {% block content %}
+        <h1>Смак Італії</h1>
+        <a href="{{ url_for('menu') }}">МЕНЮ</a>
+        {% endblock content %}
+
+        <footer>
+            <p>{{ macros.mode("body") }}</p>
+        </footer>
+    </body>
+</html>
